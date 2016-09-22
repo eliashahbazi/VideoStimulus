@@ -6,9 +6,78 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E1556E1D1D945FFE00AE70F9 /* Install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E1556E1E1D945FFE00AE70F9 /* Build configuration list for PBXAggregateTarget "Install" */;
+			buildPhases = (
+				E1556E221D94601600AE70F9 /* CopyFiles */,
+			);
+			dependencies = (
+				E1556E211D94601100AE70F9 /* PBXTargetDependency */,
+			);
+			name = Install;
+			productName = Install;
+		};
+		E1556E241D94604B00AE70F9 /* Everything */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E1556E251D94604B00AE70F9 /* Build configuration list for PBXAggregateTarget "Everything" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E1556E281D94604F00AE70F9 /* PBXTargetDependency */,
+			);
+			name = Everything;
+			productName = Everything;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		E1556E151D945DA700AE70F9 /* VideoStimulusPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1556E141D945DA700AE70F9 /* VideoStimulusPlugin.cpp */; };
+		E1556E1A1D945F6000AE70F9 /* MWorksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1556E191D945F6000AE70F9 /* MWorksCore.framework */; };
+		E1556E1C1D945F7900AE70F9 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1556E1B1D945F7900AE70F9 /* libboost_system.a */; };
+		E1556E231D94601E00AE70F9 /* VideoStimulus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1556E061D945BD600AE70F9 /* VideoStimulus.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1556E201D94601100AE70F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1556DFE1D945BD600AE70F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1556E051D945BD600AE70F9;
+			remoteInfo = VideoStimulus;
+		};
+		E1556E271D94604F00AE70F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1556DFE1D945BD600AE70F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1556E1D1D945FFE00AE70F9;
+			remoteInfo = Install;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1556E221D94601600AE70F9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(MW_PLUGINS_DIR)";
+			dstSubfolderSpec = 0;
+			files = (
+				E1556E231D94601E00AE70F9 /* VideoStimulus.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E1556E061D945BD600AE70F9 /* VideoStimulus.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoStimulus.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1556E091D945BD600AE70F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1556E101D945CA900AE70F9 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		E1556E111D945CA900AE70F9 /* WARNING.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WARNING.txt; sourceTree = "<group>"; };
+		E1556E141D945DA700AE70F9 /* VideoStimulusPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoStimulusPlugin.cpp; sourceTree = "<group>"; };
+		E1556E171D945E6800AE70F9 /* VideoStimulus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoStimulus-Prefix.pch"; sourceTree = "<group>"; };
+		E1556E191D945F6000AE70F9 /* MWorksCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MWorksCore.framework; path = /Library/Frameworks/MWorksCore.framework; sourceTree = "<absolute>"; };
+		E1556E1B1D945F7900AE70F9 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = "/Library/Application Support/MWorks/Developer/lib/libboost_system.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1556E1A1D945F6000AE70F9 /* MWorksCore.framework in Frameworks */,
+				E1556E1C1D945F7900AE70F9 /* libboost_system.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -25,7 +96,9 @@
 		E1556DFD1D945BD600AE70F9 = {
 			isa = PBXGroup;
 			children = (
+				E1556E0F1D945C8100AE70F9 /* External Config */,
 				E1556E081D945BD600AE70F9 /* VideoStimulus */,
+				E1556E181D945F6000AE70F9 /* Frameworks */,
 				E1556E071D945BD600AE70F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,9 +114,38 @@
 		E1556E081D945BD600AE70F9 /* VideoStimulus */ = {
 			isa = PBXGroup;
 			children = (
-				E1556E091D945BD600AE70F9 /* Info.plist */,
+				E1556E141D945DA700AE70F9 /* VideoStimulusPlugin.cpp */,
+				E1556E161D945DB800AE70F9 /* Supporting Files */,
 			);
 			path = VideoStimulus;
+			sourceTree = "<group>";
+		};
+		E1556E0F1D945C8100AE70F9 /* External Config */ = {
+			isa = PBXGroup;
+			children = (
+				E1556E101D945CA900AE70F9 /* Development.xcconfig */,
+				E1556E111D945CA900AE70F9 /* WARNING.txt */,
+			);
+			name = "External Config";
+			path = "/Library/Application Support/MWorks/Developer/Xcode";
+			sourceTree = "<absolute>";
+		};
+		E1556E161D945DB800AE70F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1556E091D945BD600AE70F9 /* Info.plist */,
+				E1556E171D945E6800AE70F9 /* VideoStimulus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1556E181D945F6000AE70F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1556E191D945F6000AE70F9 /* MWorksCore.framework */,
+				E1556E1B1D945F7900AE70F9 /* libboost_system.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +181,14 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
+					E1556E1D1D945FFE00AE70F9 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					E1556E241D94604B00AE70F9 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E1556E011D945BD600AE70F9 /* Build configuration list for PBXProject "VideoStimulus" */;
@@ -94,6 +204,8 @@
 			projectRoot = "";
 			targets = (
 				E1556E051D945BD600AE70F9 /* VideoStimulus */,
+				E1556E1D1D945FFE00AE70F9 /* Install */,
+				E1556E241D94604B00AE70F9 /* Everything */,
 			);
 		};
 /* End PBXProject section */
@@ -113,25 +225,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1556E151D945DA700AE70F9 /* VideoStimulusPlugin.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E1556E211D94601100AE70F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1556E051D945BD600AE70F9 /* VideoStimulus */;
+			targetProxy = E1556E201D94601100AE70F9 /* PBXContainerItemProxy */;
+		};
+		E1556E281D94604F00AE70F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1556E1D1D945FFE00AE70F9 /* Install */;
+			targetProxy = E1556E271D94604F00AE70F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		E1556E0A1D945BD600AE70F9 /* Debug */ = {
+		E1556E0A1D945BD600AE70F9 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1556E101D945CA900AE70F9 /* Development.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -140,97 +261,45 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 			};
-			name = Debug;
+			name = Development;
 		};
-		E1556E0B1D945BD600AE70F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		E1556E0D1D945BD600AE70F9 /* Debug */ = {
+		E1556E0D1D945BD600AE70F9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoStimulus/VideoStimulus-Prefix.pch";
 				INFOPLIST_FILE = VideoStimulus/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.mworks-project.VideoStimulus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Development;
 		};
-		E1556E0E1D945BD600AE70F9 /* Release */ = {
+		E1556E1F1D945FFE00AE70F9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = VideoStimulus/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.mworks-project.VideoStimulus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Development;
+		};
+		E1556E261D94604B00AE70F9 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Development;
 		};
 /* End XCBuildConfiguration section */
 
@@ -238,17 +307,30 @@
 		E1556E011D945BD600AE70F9 /* Build configuration list for PBXProject "VideoStimulus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1556E0A1D945BD600AE70F9 /* Debug */,
-				E1556E0B1D945BD600AE70F9 /* Release */,
+				E1556E0A1D945BD600AE70F9 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		E1556E0C1D945BD600AE70F9 /* Build configuration list for PBXNativeTarget "VideoStimulus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1556E0D1D945BD600AE70F9 /* Debug */,
-				E1556E0E1D945BD600AE70F9 /* Release */,
+				E1556E0D1D945BD600AE70F9 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		E1556E1E1D945FFE00AE70F9 /* Build configuration list for PBXAggregateTarget "Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1556E1F1D945FFE00AE70F9 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1556E251D94604B00AE70F9 /* Build configuration list for PBXAggregateTarget "Everything" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1556E261D94604B00AE70F9 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
