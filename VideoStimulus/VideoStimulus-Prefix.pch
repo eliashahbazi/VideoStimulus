@@ -11,10 +11,18 @@
 
 #ifdef __cplusplus
 
+#include <MWorksCore/CFObjectPtr.h>
 #include <MWorksCore/Plugin.h>
+#include <MWorksCore/StandardDynamicStimulus.h>
 #include <MWorksCore/StandardStimuli.h>
 #include <MWorksCore/StandardStimulusFactory.h>
 
 #endif /* defined(__cplusplus) */
+
+#ifdef __OBJC__
+
+#import <AVFoundation/AVFoundation.h>
+
+#endif /* defined(__OBJC__) */
 
 #endif /* VideoStimulus_Prefix_pch */

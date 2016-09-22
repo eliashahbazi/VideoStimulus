@@ -6,7 +6,7 @@
 //  Copyright © 2016 The MWorks Project. All rights reserved.
 //
 
-//#include "VideoStimulus.hpp"
+#include "VideoStimulus.hpp"
 
 
 BEGIN_NAMESPACE_MW
@@ -14,7 +14,7 @@ BEGIN_NAMESPACE_MW
 
 class VideoStimulusPlugin : public Plugin {
     void registerComponents(boost::shared_ptr<ComponentRegistry> registry) override {
-        //registry->registerFactory<StandardStimulusFactory, VideoStimulus>();
+        registry->registerFactory<StandardStimulusFactory, VideoStimulus>();
     }
 };
 

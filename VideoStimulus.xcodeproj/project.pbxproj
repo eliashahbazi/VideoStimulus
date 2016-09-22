@@ -33,10 +33,16 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E14D7C531D95AEBE00748503 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14D7C521D95AEBE00748503 /* AVFoundation.framework */; };
+		E14D7C551D95B1C200748503 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14D7C541D95B1C200748503 /* CoreVideo.framework */; };
 		E1556E151D945DA700AE70F9 /* VideoStimulusPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1556E141D945DA700AE70F9 /* VideoStimulusPlugin.cpp */; };
 		E1556E1A1D945F6000AE70F9 /* MWorksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1556E191D945F6000AE70F9 /* MWorksCore.framework */; };
 		E1556E1C1D945F7900AE70F9 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1556E1B1D945F7900AE70F9 /* libboost_system.a */; };
 		E1556E231D94601E00AE70F9 /* VideoStimulus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1556E061D945BD600AE70F9 /* VideoStimulus.bundle */; };
+		E1556E2C1D9463B400AE70F9 /* VideoStimulus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1556E2A1D9463B400AE70F9 /* VideoStimulus.cpp */; };
+		E1E780101D9D7CC400A04814 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E7800F1D9D7CC400A04814 /* CoreMedia.framework */; };
+		E1FAA1A31D9977A100BA5D9B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FAA1A21D9977A100BA5D9B /* OpenGL.framework */; };
+		E1FAA1A51D99BB9400BA5D9B /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FAA1A41D99BB9400BA5D9B /* libboost_filesystem.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E14D7C521D95AEBE00748503 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E14D7C541D95B1C200748503 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E1556E061D945BD600AE70F9 /* VideoStimulus.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoStimulus.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1556E091D945BD600AE70F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1556E101D945CA900AE70F9 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
@@ -78,6 +86,11 @@
 		E1556E171D945E6800AE70F9 /* VideoStimulus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoStimulus-Prefix.pch"; sourceTree = "<group>"; };
 		E1556E191D945F6000AE70F9 /* MWorksCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MWorksCore.framework; path = /Library/Frameworks/MWorksCore.framework; sourceTree = "<absolute>"; };
 		E1556E1B1D945F7900AE70F9 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = "/Library/Application Support/MWorks/Developer/lib/libboost_system.a"; sourceTree = "<absolute>"; };
+		E1556E2A1D9463B400AE70F9 /* VideoStimulus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoStimulus.cpp; sourceTree = "<group>"; };
+		E1556E2B1D9463B400AE70F9 /* VideoStimulus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VideoStimulus.hpp; sourceTree = "<group>"; };
+		E1E7800F1D9D7CC400A04814 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E1FAA1A21D9977A100BA5D9B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E1FAA1A41D99BB9400BA5D9B /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = "/Library/Application Support/MWorks/Developer/lib/libboost_filesystem.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1556E1A1D945F6000AE70F9 /* MWorksCore.framework in Frameworks */,
+				E14D7C531D95AEBE00748503 /* AVFoundation.framework in Frameworks */,
+				E1E780101D9D7CC400A04814 /* CoreMedia.framework in Frameworks */,
+				E14D7C551D95B1C200748503 /* CoreVideo.framework in Frameworks */,
+				E1FAA1A31D9977A100BA5D9B /* OpenGL.framework in Frameworks */,
+				E1FAA1A51D99BB9400BA5D9B /* libboost_filesystem.a in Frameworks */,
 				E1556E1C1D945F7900AE70F9 /* libboost_system.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +132,8 @@
 		E1556E081D945BD600AE70F9 /* VideoStimulus */ = {
 			isa = PBXGroup;
 			children = (
+				E1556E2B1D9463B400AE70F9 /* VideoStimulus.hpp */,
+				E1556E2A1D9463B400AE70F9 /* VideoStimulus.cpp */,
 				E1556E141D945DA700AE70F9 /* VideoStimulusPlugin.cpp */,
 				E1556E161D945DB800AE70F9 /* Supporting Files */,
 			);
@@ -143,6 +163,11 @@
 			isa = PBXGroup;
 			children = (
 				E1556E191D945F6000AE70F9 /* MWorksCore.framework */,
+				E14D7C521D95AEBE00748503 /* AVFoundation.framework */,
+				E1E7800F1D9D7CC400A04814 /* CoreMedia.framework */,
+				E14D7C541D95B1C200748503 /* CoreVideo.framework */,
+				E1FAA1A21D9977A100BA5D9B /* OpenGL.framework */,
+				E1FAA1A41D99BB9400BA5D9B /* libboost_filesystem.a */,
 				E1556E1B1D945F7900AE70F9 /* libboost_system.a */,
 			);
 			name = Frameworks;
@@ -226,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1556E151D945DA700AE70F9 /* VideoStimulusPlugin.cpp in Sources */,
+				E1556E2C1D9463B400AE70F9 /* VideoStimulus.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +352,7 @@
 				E1556E1F1D945FFE00AE70F9 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
 		};
 		E1556E251D94604B00AE70F9 /* Build configuration list for PBXAggregateTarget "Everything" */ = {
 			isa = XCConfigurationList;
@@ -333,6 +360,7 @@
 				E1556E261D94604B00AE70F9 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};
