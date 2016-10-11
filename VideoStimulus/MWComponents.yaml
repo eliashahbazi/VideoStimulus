@@ -1,0 +1,47 @@
+---
+
+
+name: Video Stimulus
+signature: stimulus/video
+isa: Stimulus
+description: >
+    A stimulus that plays a video stored in any video file format supported
+    by the operating system
+parameters: 
+  - 
+    name: path
+    required: yes
+  - 
+    name: volume
+    default: 0.0
+  - 
+    name: loop
+    default: 'NO'
+  - 
+    name: repeats
+    default: 0
+  - 
+    name: ended
+  - 
+    name: x_size
+    required: yes
+  - 
+    name: y_size
+    required: yes
+  - 
+    name: x_position
+    default: 0.0
+  - 
+    name: y_position
+    default: 0.0
+  - 
+    name: rotation
+    default: 0.0
+  - 
+    name: alpha_multiplier
+    default: 1.0
+  - 
+    name: autoplay
+    default: 'NO'
+
+

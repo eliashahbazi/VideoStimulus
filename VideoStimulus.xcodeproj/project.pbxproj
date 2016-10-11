@@ -40,6 +40,8 @@
 		E1556E1C1D945F7900AE70F9 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1556E1B1D945F7900AE70F9 /* libboost_system.a */; };
 		E1556E231D94601E00AE70F9 /* VideoStimulus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1556E061D945BD600AE70F9 /* VideoStimulus.bundle */; };
 		E1556E2C1D9463B400AE70F9 /* VideoStimulus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1556E2A1D9463B400AE70F9 /* VideoStimulus.cpp */; };
+		E1738F3B1DAD5BDA00B72222 /* MWComponents.yaml in Resources */ = {isa = PBXBuildFile; fileRef = E1738F391DAD5BDA00B72222 /* MWComponents.yaml */; };
+		E1738F3C1DAD5BDA00B72222 /* MWLibrary.xml in Resources */ = {isa = PBXBuildFile; fileRef = E1738F3A1DAD5BDA00B72222 /* MWLibrary.xml */; };
 		E1E780101D9D7CC400A04814 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E7800F1D9D7CC400A04814 /* CoreMedia.framework */; };
 		E1FAA1A31D9977A100BA5D9B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FAA1A21D9977A100BA5D9B /* OpenGL.framework */; };
 		E1FAA1A51D99BB9400BA5D9B /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FAA1A41D99BB9400BA5D9B /* libboost_filesystem.a */; };
@@ -88,6 +90,8 @@
 		E1556E1B1D945F7900AE70F9 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = "/Library/Application Support/MWorks/Developer/lib/libboost_system.a"; sourceTree = "<absolute>"; };
 		E1556E2A1D9463B400AE70F9 /* VideoStimulus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoStimulus.cpp; sourceTree = "<group>"; };
 		E1556E2B1D9463B400AE70F9 /* VideoStimulus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VideoStimulus.hpp; sourceTree = "<group>"; };
+		E1738F391DAD5BDA00B72222 /* MWComponents.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MWComponents.yaml; sourceTree = "<group>"; };
+		E1738F3A1DAD5BDA00B72222 /* MWLibrary.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MWLibrary.xml; sourceTree = "<group>"; };
 		E1E7800F1D9D7CC400A04814 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E1FAA1A21D9977A100BA5D9B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		E1FAA1A41D99BB9400BA5D9B /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = "/Library/Application Support/MWorks/Developer/lib/libboost_filesystem.a"; sourceTree = "<absolute>"; };
@@ -155,6 +159,8 @@
 			children = (
 				E1556E091D945BD600AE70F9 /* Info.plist */,
 				E1556E171D945E6800AE70F9 /* VideoStimulus-Prefix.pch */,
+				E1738F391DAD5BDA00B72222 /* MWComponents.yaml */,
+				E1738F3A1DAD5BDA00B72222 /* MWLibrary.xml */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -240,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1738F3B1DAD5BDA00B72222 /* MWComponents.yaml in Resources */,
+				E1738F3C1DAD5BDA00B72222 /* MWLibrary.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
